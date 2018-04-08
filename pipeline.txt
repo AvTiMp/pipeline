@@ -1,0 +1,9 @@
+timeout(time: 1, unit: 'MINUTES') {
+    stage('test') {
+        try {
+            echo 'this is a sample pipeline'
+        } catch (err) {
+            echo 'oops'
+        }
+    }
+}
